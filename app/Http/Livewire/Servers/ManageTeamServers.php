@@ -64,7 +64,7 @@ class ManageTeamServers extends Component
     {
         $this->validate();
 
-        $this->team->servers()->create($this->state);
+        tap($this->team->servers()->create($this->state))->provision();
 
         $this->reset();
     }

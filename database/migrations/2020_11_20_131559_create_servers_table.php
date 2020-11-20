@@ -17,6 +17,7 @@ class CreateServersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('server_size');
+            $table->string('status')->default('created');
             $table->foreignId('team_id')->constrained();
             $table->timestamps();
         });

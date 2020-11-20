@@ -34,7 +34,7 @@
         <x-jet-section-border />
 
         <!-- Manage Servers -->
-        <div class="mt-10 sm:mt-0">
+        <div class="mt-10 sm:mt-0" wire:poll>
             <x-jet-action-section>
                 <x-slot name="title">
                     {{ __('Team Servers') }}
@@ -51,7 +51,7 @@
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center">
                                     <div class="ml-4">{{ $server->name }}</div>
-                                    <div class="ml-2 text-xs text-cool-gray-400">{{ $server->server_size }}</div>
+                                    <div class="ml-2 text-xs text-cool-gray-400">{{ $server->server_size }}, {{ $server->status }}</div>
                                 </div>
 
                                 <div class="flex items-center">
