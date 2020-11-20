@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-use App\Jobs\Servers\Configure;
-use App\Jobs\Servers\Provision;
+use App\Jobs\Servers;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -30,8 +29,8 @@ class Server extends Model
             'status' => 'provisioning',
         ]);
 
-        Provision::withChain([
-            new Configure($this),
+        Servers\Provision::withChain([
+            new Servers\Configure($this),
         ])->dispatch($this);
     }
 }

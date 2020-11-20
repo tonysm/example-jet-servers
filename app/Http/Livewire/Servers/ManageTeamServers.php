@@ -67,6 +67,7 @@ class ManageTeamServers extends Component
         tap($this->team->servers()->create($this->state))->provision();
 
         $this->reset();
+        $this->generateName();
     }
 
     public function getTeamProperty()
