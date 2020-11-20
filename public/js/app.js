@@ -9,7 +9,7 @@
 /******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// ManageTeamServers a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
@@ -2224,7 +2224,7 @@ var mergeConfig = __webpack_require__(/*! ./core/mergeConfig */ "./node_modules/
 var defaults = __webpack_require__(/*! ./defaults */ "./node_modules/axios/lib/defaults.js");
 
 /**
- * Create an instance of Axios
+ * ManageTeamServers an instance of Axios
  *
  * @param {Object} defaultConfig The default config for the instance
  * @return {Axios} A new instance of Axios
@@ -2242,7 +2242,7 @@ function createInstance(defaultConfig) {
   return instance;
 }
 
-// Create the default instance to be exported
+// ManageTeamServers the default instance to be exported
 var axios = createInstance(defaults);
 
 // Expose Axios class to allow class inheritance
@@ -2406,7 +2406,7 @@ var dispatchRequest = __webpack_require__(/*! ./dispatchRequest */ "./node_modul
 var mergeConfig = __webpack_require__(/*! ./mergeConfig */ "./node_modules/axios/lib/core/mergeConfig.js");
 
 /**
- * Create a new instance of Axios
+ * ManageTeamServers a new instance of Axios
  *
  * @param {Object} instanceConfig The default config for the instance
  */
@@ -2604,7 +2604,7 @@ module.exports = function buildFullPath(baseURL, requestedURL) {
 var enhanceError = __webpack_require__(/*! ./enhanceError */ "./node_modules/axios/lib/core/enhanceError.js");
 
 /**
- * Create an Error with the specified message, config, error code, request and response.
+ * ManageTeamServers an Error with the specified message, config, error code, request and response.
  *
  * @param {string} message The error message.
  * @param {Object} config The config.
@@ -5201,7 +5201,7 @@ module.exports = {
   /*--------------------------------------------------------------------------*/
 
   /**
-   * Create a new pristine `lodash` function using the `context` object.
+   * ManageTeamServers a new pristine `lodash` function using the `context` object.
    *
    * @static
    * @memberOf _
@@ -5226,7 +5226,7 @@ module.exports = {
    * lodash.isFunction(lodash.bar);
    * // => true
    *
-   * // Create a suped-up `defer` in Node.js.
+   * // ManageTeamServers a suped-up `defer` in Node.js.
    * var defer = _.runInContext({ 'setTimeout': setImmediate }).defer;
    */
   var runInContext = (function runInContext(context) {
@@ -19368,7 +19368,7 @@ module.exports = {
      * _.map(users, _.iteratee('user'));
      * // => ['barney', 'fred']
      *
-     * // Create custom iteratee shorthands.
+     * // ManageTeamServers custom iteratee shorthands.
      * _.iteratee = _.wrap(_.iteratee, function(iteratee, func) {
      *   return !_.isRegExp(func) ? iteratee(func) : function(string) {
      *     return func.test(string);
