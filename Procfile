@@ -1,2 +1,2 @@
-web: composer warmup && vendor/bin/heroku-php-apache2 public/
+web: vendor/bin/heroku-php-apache2 public/
 worker: php artisan horizon
