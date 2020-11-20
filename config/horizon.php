@@ -180,6 +180,7 @@ return [
         'production' => [
             'supervisor-1' => [
                 'maxProcesses' => 3,
+                'minProcesses' => 2,
                 'balanceMaxShift' => 1,
                 'balanceCooldown' => 2,
             ],
